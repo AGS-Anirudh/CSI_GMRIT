@@ -1,0 +1,164 @@
+
+#teams-section{
+    background-color: var(--font-white);
+    margin-top: 100px;
+    text-align: center;
+}
+
+#teams-section h2{
+    font-size: 36px;
+    margin-top: 22px;
+}
+#teams-section h2 span{
+    color: var(--primary-blue);
+}
+.team{
+    display: flex;
+    justify-content: space-between;
+    gap: 58px 36px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 36px auto ;
+}
+
+.sub-team-section,.core-team-section,.alumini-team-section{
+    padding: 20px 0;
+}
+
+.sub-team-section{
+    background-color: var(--background-blue);
+}
+
+.card{
+    /* width: 160px;
+    height: 200px; */
+    width: 180px;
+    height: 220px;
+    perspective: 500px;
+    position: relative;
+    border-radius: 10px;
+}
+  
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+}
+  
+.card:hover .content{
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+}
+  
+.front,.back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+  
+.back{
+    background: var(--footer-dark-blue);
+    /* background:linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.6)
+      ),url(/assets/teams/faculty/1.jpg);; */
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+    transform: rotateY( 180deg );
+}
+
+.mem-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.mem-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 6px;
+    
+}
+.mem-info{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.mem-details h3{
+    font-size: 26px;
+    font-weight: 600;
+    user-select: none;
+}
+
+.mem-details p{
+    font-size: 14px;
+    font-weight: 600;
+    user-select: none;
+    color:var(--primary-blue);
+}
+
+
+.mem-details i{
+    font-size: 32px;
+    color: var(--font-white);
+    transition: 0.2s all ease-in-out;
+}
+
+.mem-details i:hover{
+    color: var(--primary-blue);
+}
+
+.mem-info{
+    color: var(--font-white);
+}
+
+.mem-linkedin{
+    margin-bottom: 12px;
+}
+
+
+/**alumini*/
+.year-selector{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 26px 26px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 20%;
+    margin: 26px auto 36px;
+}
+
+select{
+    padding: 9px 16px;
+    border: 1px solid var(--black); 
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.year-btn{
+    padding: 8px 16px;
+    background-color: var(--primary-blue);
+    color: var(--font-white);
+    border: 2px solid var(--primary-blue);
+    font-weight: 400;
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+}
+
+.year-btn:hover{
+    background-color: var(--font-white);
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+
+}

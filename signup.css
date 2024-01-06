@@ -1,0 +1,178 @@
+html {
+    height: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior:smooth;
+    letter-spacing: 1px;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.7)
+    ),url(/assets/images/hero-2.png);
+    background-size: cover;
+}
+
+label{
+    margin-left: 4rem;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 26px;
+    width: 100%;
+    padding: 16px;
+    margin: 20px auto;
+}
+.logo img{
+    width: 76px;
+    height: 76px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.login-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid var(--font-white);
+    max-width: 450px;
+    background: linear-gradient(#141e30, #243b55);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+    border-radius: 18px;
+
+}
+h2{
+    font-size: 24px;
+    color: var(--font-white);
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+
+.login-box .user-box {
+    position: relative;
+    width: 100%;
+    margin-top: 2px;
+    margin-left: 10px;
+
+}
+  
+.login-box .user-box input {
+    width: 250px;
+    min-width: 200px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--font-white);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 2px solid var(--font-white);
+    outline: none;
+    background: transparent;
+
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--font-white);
+    pointer-events: none;
+    transition: .5s;
+    font-weight: 400;
+}
+  
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label{
+    top: -24px;
+    left: 0;
+    color: var(--primary-blue);
+    font-size: 16px;
+    font-weight: 450;
+}
+
+
+.login-box button{
+    width: 100%;
+    padding: 8px 36px;
+    margin: 8px auto 26px;
+    color: var(--font-white);
+    font-weight: 500;
+    font-size: 16px;
+    border: 2px solid var(--font-white);
+    background:transparent;
+
+}
+
+.login-box button:hover{
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    background-color: var(--primary-blue);
+    color: var(--font-white);
+}
+
+
+
+.login-box h4{
+    font-size: 14px;
+    font-weight: 450;
+    margin: 6px 16px 56px;
+    color: var(--font-white);
+
+}
+.login-box span{
+    color: var(--primary-blue);
+    font-weight: 500;
+}
+
+.sign-up-box a{
+    text-decoration: none;
+    color: var(--primary-blue);
+}
+
+.button-hide{
+    display: none;
+}
+
+@media screen and  (max-width:480px){
+
+    .login-box{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid var(--font-white);
+        min-width: 310px;
+        background: linear-gradient(#141e30, #243b55);
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+        border-radius: 18px;
+    
+    }
+    .user-box{
+        margin-top: 0px;
+    }
+    .user-box input{
+        margin: 0;
+    }
+    form{
+        padding: 0;
+    }
+}

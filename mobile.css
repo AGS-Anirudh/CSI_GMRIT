@@ -1,0 +1,164 @@
+@media screen and (max-width:480px) {
+    #header{
+        padding: 0;
+    }
+    .gmr-logo{
+        display: none;
+    }
+    .nav-links{
+        margin: 12px 0 12px 18px;
+
+    }
+
+    .nav-links li{
+        padding: 0;
+        padding: 6px 0;
+    }
+
+    .access-buttons{
+        margin: 10px 0 10px 16px;
+    }
+
+    .hero-section{
+        margin-top: 50px;
+        
+    }
+
+    .hero-section h1{
+        margin-left: 18px;
+        font-size: 60px;
+        line-height: 1.1;
+    }
+    .hero-section h2{
+        font-size: 32px;
+        width: 80%;
+
+        margin: 10px auto 0 18px;
+    }
+
+    .access-buttons .log-in{
+        margin: 0 20px 10px 0px;
+
+    }
+
+    /**recent-events*/
+    .events{
+        margin: 40px auto;
+        gap: 36px;
+        align-items: center;
+
+    }
+    #recent-events .event-poster{
+        width: 200px;
+        height: 300px;
+    }
+
+    .events{
+        position: relative;
+        margin: 36px auto;
+    }
+    
+    .view-more-btn{
+        position: absolute;
+        right: -30px;
+        top: 650px;
+    }
+    .least-recent{
+        display: none;
+    }
+
+    
+    /**about*/
+    .top-info h2{
+        font-size: 28px;
+    }
+
+    .read-more-btn{
+        display: inline-block;
+        color: var(--primary-blue);
+    }
+
+    .read-more-text{
+        display: none;
+    }
+    .read-more-text--show{
+        display: inline;
+    }
+
+    .section-info{
+        width: 90%;
+    }
+
+    /**Faculty Section*/
+    .faculty-coord-section h2{
+        font-size: 28px;
+    }
+
+    /**vision*/
+
+    .vision-info ul li{
+        margin-left: 40px;
+    }
+
+    /**stats*/
+    #stats-section{
+        margin: 56px 0px 26px;
+    }
+
+    .stats{
+        gap: 66px;
+    }
+
+    /**footer*/
+
+    footer{
+        padding-left: 28px;
+        justify-content: flex-start;
+
+    }
+
+    .useful-links,.footer-logo,.contact,.social-media{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .social-media{
+        justify-content: flex-start;
+        margin-bottom: 40px;
+    }
+    
+    
+    /**core-team*/
+    #teams-section{
+        margin-top: 100px;
+    }
+    
+    .sub-team-section,.core-team-section,.alumini-team-section{
+        padding: 0 16px 20px;
+    }
+
+    #teams-section h2{
+        font-size: 34px;
+        margin: 0px;
+    }
+
+    .team{
+        width: 95%;
+        margin: 20px auto;
+        gap: 28px 18px;
+    
+    }
+
+    .card{
+        width: 150px;
+        height: 190px;
+    }
+
+    .mem-details p{
+        font-size: 12px;
+    }
+
+    .year-selector{
+        gap: 18px;
+    }
+}
